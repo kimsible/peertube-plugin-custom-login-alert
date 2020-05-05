@@ -1,0 +1,22 @@
+my-login .alert-info {
+  opacity: 0;
+  height: 0;
+}
+
+my-login .alert-info.fade {
+  height: max-content;
+  opacity: 1;
+  animation: fade 0.4s;
+}
+
+@keyframes fade {
+  0% {
+    animation-timing-function: ease-in-out;
+  }
+
+  100% {
+    height: max-content;
+    opacity: 1;
+    animation-timing-function: ease-in-out;
+  }
+}

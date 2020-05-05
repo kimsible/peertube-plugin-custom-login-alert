@@ -1,0 +1,56 @@
+{
+  "name": "peertube-plugin-custom-login-alert",
+  "description": "Customize message alert of login page",
+  "version": "0.1.0",
+  "author": "kimsible",
+  "license": "AGPL-3.0",
+  "bugs": "https://github.com/kimsible/peertube-custom-login-alert/issues",
+  "clientScripts": [
+    {
+      "script": "dist/common-client-plugin.js",
+      "scopes": [
+        "common"
+      ]
+    }
+  ],
+  "css": [
+    "assets/css/client-helpers.css"
+  ],
+  "devDependencies": {
+    "@purtuga/esm-webpack-plugin": "^1.2.1",
+    "dotenv": "^8.2.0",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.0",
+    "standard": "^14.3.3",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
+  },
+  "engine": {
+    "peertube": ">=2.1.1"
+  },
+  "homepage": "https://github.com/kimsible/peertube-plugin-custom-login-alert",
+  "keywords": [
+    "peertube",
+    "plugin"
+  ],
+  "library": "./main.js",
+  "scripts": {
+    "dev": "webpack --env.dev",
+    "prepare": "npm run build",
+    "build": "webpack --env.prod"
+  },
+  "staticDirs": {},
+  "translations": {},
+  "dependencies": {},
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": "standard --fix"
+  },
+  "standard": {
+    "globals": []
+  }
+}
