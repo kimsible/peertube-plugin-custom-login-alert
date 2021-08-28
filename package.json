@@ -1,6 +1,6 @@
 {
   "name": "peertube-plugin-custom-login-alert",
-  "description": "Customize message alert of login page",
+  "description": "NO LONGER MAINTAINED - Customize message alert of login page",
   "version": "0.1.0",
   "author": "kimsible",
   "license": "AGPL-3.0",
